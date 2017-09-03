@@ -1,0 +1,22 @@
+.footer-bottom {
+    padding: 2em;
+    /*background: url("../../img/footer.png") no-repeat;*/
+    background-size: cover;
+    color: #51deff;
+    ul {
+        display: inline-block;
+        margin-left: -30px;
+        li {
+            list-style-type: none;
+            display: inline-block;
+            padding: 0 4px;
+            a {
+                color: #51deff;
+            }
+        }
+    }
+    .footerInfo {
+        line-height: 30px;
+        height: 30px;
+    }
+}

@@ -1,0 +1,127 @@
+/*==================================================
+=            Bootstrap 3 Media Queries             =
+==================================================*/
+
+
+/*==========  Mobile First Method  ==========*/
+
+
+/* Custom, iPhone Retina */
+
+@media only screen and (min-width: 320px) {}
+
+
+/* Extra Small Devices, Phones */
+
+@media only screen and (min-width: 480px) {}
+
+
+/* Small Devices, Tablets */
+
+@media only screen and (min-width: 768px) {
+    .modal {
+        .modal-content {
+            width: 600px;
+        }
+    }
+}
+
+
+/* Medium Devices, Desktops */
+
+@media only screen and (min-width: 992px) {}
+
+
+/* Large Devices, Wide Screens */
+
+@media only screen and (min-width: 1200px) {}
+
+
+/*==========  Non-Mobile First Method  ==========*/
+
+
+/* Large Devices, Wide Screens */
+
+@media only screen and (max-width: 1200px) {}
+
+
+/* Medium Devices, Desktops */
+
+@media only screen and (max-width: 992px) {}
+
+
+/* Small Devices, Tablets */
+
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 742px;
+    }
+}
+
+
+/* Extra Small Devices, Phones */
+
+@media only screen and (max-width: 480px) {
+    #menu .navbar-default .navbar-header .navbar-brand {
+        display: block;
+        float: left;
+        padding-left: 0px;
+        padding-right: 0px;
+        left: 3%;
+    }
+    #menu .navbar-default .navbar-header .navbar-brand img.logo {
+        vertical-align: middle;
+    }
+    #menu .navbar-default .navbar-header .navbar-brand .accountInfo {
+        margin-left: .5rem;
+    }
+    #menu .navbar-default .navbar-header .navbar-brand .accountInfo h3 {
+        font-size: 14px;
+        color: #ffffff;
+        font-weight: bold;
+        margin: 0px;
+        margin-bottom: 5px;
+        padding-right: 1.5rem;
+    }
+    #menu .navbar-default .navbar-nav .nav-item .nav-link {
+        border-left: none;
+    }
+    #menu .navbar-default .navbar-nav .nav-item.active:after {
+        border-width: 0 0px 0px 0px;
+    }
+    #menu .navbar-default .navbar-nav .nav-item .nav-link:hover {
+        border-left: none;
+        background-color: solid 1px #0182b3;
+    }
+    .navbar-default .navbar-collapse,
+    .navbar-default .navbar-form {
+        border: none;
+    }
+    .navbar-default .navbar-toggle:hover,
+    .navbar-default .navbar-toggle:focus {
+        background-color: transparent;
+    }
+    #menu .navbar-default .navbar-nav .nav-item.active .nav-link:hover,
+    #menu .navbar-default .navbar-nav .nav-item.active .nav-link:focus {
+        background: #0182b3;
+    }
+}
+
+
+/* Custom, iPhone Retina */
+
+@media only screen and (max-width: 320px) {}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    #menu .navbar-default .navbar-nav .nav-item .nav-link {
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
+    }
+    #menu .navbar-default .navbar-nav .nav-item .nav-link:hover {
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
+    }
+    .tab .nav-justified {
+        width: 85%;
+    }
+}

@@ -1,0 +1,438 @@
+/* -------------------font and color classes --------------------*/
+
+.light-60 {
+    font-size: 60px;
+    font-weight: 300;
+    letter-spacing: 1.5px;
+    color: #ffffff;
+}
+
+.light-40 {
+    font-size: 40px;
+    font-weight: 300;
+    color: #ffffff;
+}
+
+.text-H1 {
+    font-size: 34px;
+    letter-spacing: 0.3px;
+    color: #333333;
+}
+
+.semiBold-18 {
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    color: #ffffff;
+    color: var(--white);
+}
+
+.semiBold-18 {
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    color: #ffffff;
+}
+
+.light-18 {
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 1.6px;
+    color: #51deff;
+}
+
+.light-18 {
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 1.6px;
+    color: #ffffff;
+}
+
+.text-Body {
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 1.22;
+    letter-spacing: 0.7px;
+    color: #333333;
+}
+
+.light-16 {
+    font-size: 16px;
+    line-height: 1;
+    letter-spacing: 1.1px;
+    color: #ffffff;
+}
+
+.bold-15 {
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 1.47;
+    letter-spacing: 0.6px;
+    color: #ffffff;
+}
+
+h6 {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.43;
+    letter-spacing: 0.8px;
+    color: #333333;
+}
+
+.bold-12 {
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1.1px;
+    color: #ffffff;
+}
+
+.medium-12 {
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1.1px;
+    color: #51deff;
+}
+
+.styleSheet-Yellow {
+    font-size: 12px;
+    letter-spacing: 1.1px;
+    color: #ffd75c;
+}
+
+.light-12 {
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 1.1px;
+    color: #51deff;
+}
+
+.table-Text {
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 1.1px;
+    color: #333333;
+}
+
+.light-11 {
+    font-size: 11px;
+    font-weight: 300;
+    letter-spacing: 0.9px;
+    color: #1581ff;
+}
+
+.tabs-active-left-aligned {
+    font-size: 11px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: #656565;
+}
+
+.tabs-link {
+    font-size: 11px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: #1581ff;
+}
+
+.light-11 {
+    font-size: 11px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    color: #ffffff;
+}
+
+.medium-10 {
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.9px;
+    color: #5cfdff;
+}
+
+.light-10 {
+    font-size: 10px;
+    font-weight: 300;
+    letter-spacing: 0.9px;
+    color: #51deff;
+}
+
+.extraLight-10 {
+    font-size: 10px;
+    font-weight: 200;
+    letter-spacing: 0.9px;
+    color: $white;
+}
+
+.whiteText {
+    color: $white;
+}
+
+.lightBlue {
+    color: $robin-s-egg-two;
+}
+
+
+/* --------------general css classes ------------------------------------*/
+
+.padding-left-5 {
+    padding-left: 5px !important;
+}
+
+.padding-left-10 {
+    padding-left: 10px !important;
+}
+
+.padding-left-15 {
+    padding-left: 15px !important;
+}
+
+.padding-left-20 {
+    padding-left: 20px !important;
+}
+
+.padding-left-25 {
+    padding-left: 25px !important;
+}
+
+.padding-left-30 {
+    padding-left: 30px !important;
+}
+
+.padding-right-5 {
+    padding-right: 5px !important;
+}
+
+.padding-right-10 {
+    padding-right: 10px !important;
+}
+
+.padding-right-15 {
+    padding-right: 15px !important;
+}
+
+.padding-right-20 {
+    padding-right: 20px !important;
+}
+
+.padding-right-25 {
+    padding-right: 25px !important;
+}
+
+.padding-right-30 {
+    padding-right: 30px !important;
+}
+
+.padding-top-5 {
+    padding-top: 5px !important;
+}
+
+.padding-top-10 {
+    padding-top: 10px !important;
+}
+
+.padding-top-15 {
+    padding-top: 15px !important;
+}
+
+.padding-top-20 {
+    padding-top: 20px !important;
+}
+
+.padding-top-25 {
+    padding-top: 25px !important;
+}
+
+.padding-top-30 {
+    padding-top: 30px !important;
+}
+
+.padding-bottom-5 {
+    padding-bottom: 5px !important;
+}
+
+.padding-bottom-10 {
+    padding-bottom: 10px !important;
+}
+
+.padding-bottom-15 {
+    padding-bottom: 15px !important;
+}
+
+.padding-bottom-20 {
+    padding-bottom: 20px !important;
+}
+
+.padding-bottom-25 {
+    padding-bottom: 25px !important;
+}
+
+.padding-bottom-30 {
+    padding-bottom: 30px !important;
+}
+
+.margin-left-5 {
+    margin-left: 5px !important;
+}
+
+.margin-left-10 {
+    margin-left: 10px !important;
+}
+
+.margin-left-15 {
+    margin-left: 15px !important;
+}
+
+.margin-left-20 {
+    margin-left: 20px !important;
+}
+
+.margin-left-25 {
+    margin-left: 25px !important;
+}
+
+.margin-left-30 {
+    margin-left: 30px !important;
+}
+
+.margin-left-35 {
+    margin-left: 35px !important;
+}
+
+.margin-left-40 {
+    margin-left: 40px !important;
+}
+
+.margin-right-5 {
+    margin-right: 5px !important;
+}
+
+.margin-right-10 {
+    margin-right: 10px !important;
+}
+
+.margin-right-15 {
+    margin-right: 15px !important;
+}
+
+.margin-right-20 {
+    margin-right: 20px !important;
+}
+
+.margin-right-25 {
+    margin-right: 25px !important;
+}
+
+.margin-right-30 {
+    margin-right: 30px !important;
+}
+
+.margin-top-5 {
+    margin-top: 5px !important;
+}
+
+.margin-top-10 {
+    margin-top: 10px !important;
+}
+
+.margin-top-15 {
+    margin-top: 15px !important;
+}
+
+.margin-top-20 {
+    margin-top: 20px !important;
+}
+
+.margin-top-25 {
+    margin-top: 25px !important;
+}
+
+.margin-top-30 {
+    margin-top: 30px !important;
+}
+
+.margin-bottom-5 {
+    margin-bottom: 5px !important;
+}
+
+.margin-bottom-10 {
+    margin-bottom: 10px !important;
+}
+
+.margin-bottom-15 {
+    margin-bottom: 15px !important;
+}
+
+.margin-bottom-20 {
+    margin-bottom: 20px !important;
+}
+
+.margin-bottom-25 {
+    margin-bottom: 25px !important;
+}
+
+.margin-bottom-30 {
+    margin-bottom: 30px !important;
+}
+
+.no-gutter {
+    padding-left: 0px !important;
+    margin-left: 0px !important;
+    padding-right: 0px !important;
+    margin-right: 0px !important;
+}
+
+.no-gutter-left {
+    padding-left: 0px !important;
+    margin-left: 0px !important;
+}
+
+.no-gutter-right {
+    padding-right: 0px !important;
+    margin-right: 0px !important;
+}
+
+.no-padding-horizontal {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}
+
+.no-padding-left {
+    padding-left: 0px !important;
+}
+
+.no-padding-right {
+    padding-right: 0px !important;
+}
+
+.no-padding {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+
+.wd100 {
+    width: 100%;
+}
+
+.iconSmall {
+    max-width: 20px;
+    width: 100%;
+}
+
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.mod-content-padding {
+    display: block;
+    position: relative;
+    overflow: auto;
+    min-height: 1px;
+    height: 100%;
+}
+
+textarea {
+    width: 100%;
+}

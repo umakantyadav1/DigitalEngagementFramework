@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="1f109d2c084146bf945d2fec84665be4" Name="Diagram1">
+        <EntityTypeShape EntityType="DEF.Services.Data.AccountExecutive" Width="1.5" PointX="9.75" PointY="9.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DEF.Services.Data.ActionItem" Width="1.5" PointX="16.25" PointY="12.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DEF.Services.Data.Activity" Width="1.5" PointX="3.75" PointY="2.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DEF.Services.Data.ActivityAsset" Width="1.5" PointX="12" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="DEF.Services.Data.ActivityBenefit" Width="1.5" PointX="6" PointY="33.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DEF.Services.Data.ActivityDependency" Width="1.5" PointX="6" PointY="37.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DEF.Services.Data.ActivityIndustry" Width="1.5" PointX="9" PointY="30.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DEF.Services.Data.ActivityInternalResource" Width="1.5" PointX="6" PointY="40.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DEF.Services.Data.ActivityNextStep" Width="1.5" PointX="6" PointY="44.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DEF.Services.Data.ActivityTip" Width="1.5" PointX="6" PointY="48" IsExpanded="true" />
+        <EntityTypeShape EntityType="DEF.Services.Data.ActivityVisitorResource" Width="1.5" PointX="6" PointY="51.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DEF.Services.Data.Asset" Width="1.5" PointX="3.75" PointY="14.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DEF.Services.Data.BriefingRequest" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DEF.Services.Data.Engagement" Width="1.5" PointX="4.5" PointY="9.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DEF.Services.Data.EngagementOutput" Width="1.5" PointX="11.75" PointY="14.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DEF.Services.Data.Industry" Width="1.5" PointX="3.75" PointY="58.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DEF.Services.Data.Package" Width="1.5" PointX="0.75" PointY="24.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DEF.Services.Data.PackageActivity" Width="1.5" PointX="6" PointY="26" IsExpanded="true" />
+        <EntityTypeShape EntityType="DEF.Services.Data.PackageAsset" Width="1.5" PointX="6" PointY="22.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DEF.Services.Data.PackageBenefit" Width="1.5" PointX="3" PointY="19.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DEF.Services.Data.PackageIndustry" Width="1.5" PointX="6" PointY="30.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DEF.Services.Data.PackageInput" Width="1.5" PointX="3" PointY="26.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DEF.Services.Data.PackageInternalResource" Width="1.5" PointX="3" PointY="29.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DEF.Services.Data.PackageNextStep" Width="1.5" PointX="3" PointY="33.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DEF.Services.Data.PackageOutput" Width="1.5" PointX="3" PointY="37.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DEF.Services.Data.PackagePrerequisite" Width="1.5" PointX="3" PointY="40.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DEF.Services.Data.PackageSurveyQuestion" Width="1.5" PointX="3" PointY="44.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DEF.Services.Data.PackageTip" Width="1.5" PointX="3" PointY="47.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DEF.Services.Data.PackageTopic" Width="1.5" PointX="9" PointY="26.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DEF.Services.Data.PackageVisitorResource" Width="1.5" PointX="3" PointY="54.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DEF.Services.Data.Participant" Width="1.5" PointX="12" PointY="10" IsExpanded="true" />
+        <EntityTypeShape EntityType="DEF.Services.Data.Playbook" Width="1.5" PointX="6.75" PointY="9.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DEF.Services.Data.PlaybookAsset" Width="1.5" PointX="9" PointY="14.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DEF.Services.Data.PlaybookPackage" Width="1.5" PointX="9" PointY="22" IsExpanded="true" />
+        <EntityTypeShape EntityType="DEF.Services.Data.PlaybookSurvey" Width="1.5" PointX="6.75" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DEF.Services.Data.PlaybookSurveyAnswer" Width="1.5" PointX="9" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DEF.Services.Data.PlaybookSurveyTopic" Width="1.5" PointX="14" PointY="14.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DEF.Services.Data.SurveyAnswerOption" Width="1.5" PointX="6.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="DEF.Services.Data.SurveyQuestion" Width="1.5" PointX="0.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DEF.Services.Data.Topic" Width="1.5" PointX="6.75" PointY="17.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DEF.Services.Data.User" Width="1.5" PointX="2.25" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DEF.Services.Data.Visit" Width="1.5" PointX="12" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DEF.Services.Data.Visitor" Width="1.5" PointX="9.75" PointY="0.875" IsExpanded="true" />
+        <AssociationConnector Association="DEF.Services.Data.FK_AccountExecutives_Engagement" ManuallyRouted="false" />
+        <AssociationConnector Association="DEF.Services.Data.FK_AccountExecutives_User" ManuallyRouted="false" />
+        <AssociationConnector Association="DEF.Services.Data.FK_ActionItem_Asset" ManuallyRouted="false" />
+        <AssociationConnector Association="DEF.Services.Data.FK_ActionItem_Participants" ManuallyRouted="false" />
+        <AssociationConnector Association="DEF.Services.Data.FK_ActivityAsset_Activity" ManuallyRouted="false" />
+        <AssociationConnector Association="DEF.Services.Data.FK_ActivityBenefit_Activity" ManuallyRouted="false" />
+        <AssociationConnector Association="DEF.Services.Data.FK_ActivityDependency_Activity" ManuallyRouted="false" />
+        <AssociationConnector Association="DEF.Services.Data.FK_ActivityIndustries_Activity" ManuallyRouted="false" />
+        <AssociationConnector Association="DEF.Services.Data.FK_ActivityInternalResource_Activity" ManuallyRouted="false" />
+        <AssociationConnector Association="DEF.Services.Data.FK_ActivityNextStep_Activity" ManuallyRouted="false" />
+        <AssociationConnector Association="DEF.Services.Data.FK_ActivityTips_Activity" ManuallyRouted="false" />
+        <AssociationConnector Association="DEF.Services.Data.FK_ActivityVisitorResource_Activity" ManuallyRouted="false" />
+        <AssociationConnector Association="DEF.Services.Data.FK_PackageActivities_Activity" ManuallyRouted="false" />
+        <AssociationConnector Association="DEF.Services.Data.FK_ParentActivity_Activity" ManuallyRouted="false" />
+        <AssociationConnector Association="DEF.Services.Data.FK_ActivityAsset_Asset" ManuallyRouted="false" />
+        <AssociationConnector Association="DEF.Services.Data.FK_ActivityIndustries_Industry" ManuallyRouted="false" />
+        <AssociationConnector Association="DEF.Services.Data.FK_EngagementOutput_Asset" ManuallyRouted="false" />
+        <AssociationConnector Association="DEF.Services.Data.FK_PackageAsset_Asset" ManuallyRouted="false" />
+        <AssociationConnector Association="DEF.Services.Data.FK_PlaybookAsset_Asset" ManuallyRouted="false" />
+        <AssociationConnector Association="DEF.Services.Data.FK_Engagement_User" ManuallyRouted="false" />
+        <AssociationConnector Association="DEF.Services.Data.FK_EngagementOutput_Engagement" ManuallyRouted="false" />
+        <AssociationConnector Association="DEF.Services.Data.FK_Playbook_Engagement" ManuallyRouted="false" />
+        <AssociationConnector Association="DEF.Services.Data.FK_PlaybookSurvey_Engagement" ManuallyRouted="false" />
+        <AssociationConnector Association="DEF.Services.Data.FK_PackageIndustries_Industry" ManuallyRouted="false" />
+        <AssociationConnector Association="DEF.Services.Data.FK_PackageActivities_Package" ManuallyRouted="false" />
+        <AssociationConnector Association="DEF.Services.Data.FK_PackageAsset_Package" ManuallyRouted="false" />
+        <AssociationConnector Association="DEF.Services.Data.FK_PackageBenefit_Package" ManuallyRouted="false" />
+        <AssociationConnector Association="DEF.Services.Data.FK_PackageIndustries_Package" ManuallyRouted="false" />
+        <AssociationConnector Association="DEF.Services.Data.FK_PackageInput_Package" ManuallyRouted="false" />
+        <AssociationConnector Association="DEF.Services.Data.FK_PackageInternalResource_Package" ManuallyRouted="false" />
+        <AssociationConnector Association="DEF.Services.Data.FK_PackageNextStep_Package" ManuallyRouted="false" />
+        <AssociationConnector Association="DEF.Services.Data.FK_PackageOutput_Package" ManuallyRouted="false" />
+        <AssociationConnector Association="DEF.Services.Data.FK_PackagePrerequisite_Package" ManuallyRouted="false" />
+        <AssociationConnector Association="DEF.Services.Data.FK_PackageSurveyQuestions_Package" ManuallyRouted="false" />
+        <AssociationConnector Association="DEF.Services.Data.FK_PackageTips_Package" ManuallyRouted="false" />
+        <AssociationConnector Association="DEF.Services.Data.FK_PackageTopics_Package" ManuallyRouted="false" />
+        <AssociationConnector Association="DEF.Services.Data.FK_PackageVisitorResource_Package" ManuallyRouted="false" />
+        <AssociationConnector Association="DEF.Services.Data.FK_ParentPackage_Package" ManuallyRouted="false" />
+        <AssociationConnector Association="DEF.Services.Data.FK_PlaybookPackages_Package" ManuallyRouted="false" />
+        <AssociationConnector Association="DEF.Services.Data.FK_PackageTopics_Topic" ManuallyRouted="false" />
+        <AssociationConnector Association="DEF.Services.Data.FK_Participants_Playbook" ManuallyRouted="false" />
+        <AssociationConnector Association="DEF.Services.Data.FK_Participants_Visitor" ManuallyRouted="false" />
+        <AssociationConnector Association="DEF.Services.Data.FK_PlaybookAsset_Playbook" ManuallyRouted="false" />
+        <AssociationConnector Association="DEF.Services.Data.FK_PlaybookPackages_Playbook" ManuallyRouted="false" />
+        <AssociationConnector Association="DEF.Services.Data.FK_PlaybookSurveyAnswer_SPlaybookSurveyID" ManuallyRouted="false" />
+        <AssociationConnector Association="DEF.Services.Data.FK_PlaybookSurveyTopics_PlaybookSurvey" ManuallyRouted="false" />
+        <AssociationConnector Association="DEF.Services.Data.FK_PlaybookSurveyAnswer_SurveyAnswerOptions" ManuallyRouted="false" />
+        <AssociationConnector Association="DEF.Services.Data.FK_PlaybookSurveyTopics_Topic" ManuallyRouted="false" />
+        <AssociationConnector Association="DEF.Services.Data.FK_Visit_Visitor" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

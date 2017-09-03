@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AF161F48-E2FE-4E59-8527-7A527D8D83AE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DEF.Services.Rules</RootNamespace>
+    <AssemblyName>DEF.Services.Rules</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\..\..\..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\..\..\..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Interfaces\IBriefingSourceRequestRuleManager.cs" />
+    <Compile Include="Modules\Base\RulesBase.cs" />
+    <Compile Include="Modules\BriefingSourceRequestRuleManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\DEF.Services\ViewModels\DEF.Services.ViewModels\DEF.Services.ViewModels.csproj">
+      <Project>{980fa0fa-c48f-483f-96f9-8a4abe171a4c}</Project>
+      <Name>DEF.Services.ViewModels</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Infrastructure\Repository\DEF.Service.Data\DEF.Services.Data.csproj">
+      <Project>{57792b6b-350b-41d8-bca5-c28937251fea}</Project>
+      <Name>DEF.Services.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Infrastructure\Repository\DEF.Services.Common.Repository\DEF.Services.Common.Repository.csproj">
+      <Project>{8fd119a5-85b7-4de8-ab69-241a191eec5f}</Project>
+      <Name>DEF.Services.Common.Repository</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Infrastructure\Utilities\DEF.Services.Utilities\DEF.Services.Utilities.csproj">
+      <Project>{a208c161-4869-405e-a398-c653a7c6f129}</Project>
+      <Name>DEF.Services.Utilities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DataObjects\DEF.Services.DataObjects\DEF.Services.DataObjects.csproj">
+      <Project>{87ed2f37-c8db-4684-82b6-94c34fa549c2}</Project>
+      <Name>DEF.Services.DataObjects</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,544 @@
+﻿@model IEnumerable<DEF.Services.ViewModels.BriefingRequestViewModel>
+
+@{
+    ViewBag.Title = "Manage Engagements";
+}
+
+<section id="manage _engagement">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 intro">Manage Engagements</div>
+            <div class="col-sm-12">
+                <div class="divider margin-top-30"></div>
+            </div>
+
+            <div class="col-sm-12">
+                <div class="customTab">
+                    <ul class="nav nav-tabs nav-tabs-alt" role="tablist">
+                        <li role="presentation " class="active">
+                            <a href="#requests" aria-controls="home" role="tab" data-toggle="tab">Requests</a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#preposed" aria-controls="profile" role="tab" data-toggle="tab">Proposed (18)</a>
+                        </li>
+                        <li role="presentation" class="">
+                            <a href="#confirm" aria-controls="home" role="tab" data-toggle="tab">Confirmed (6)</a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#suspened" aria-controls="profile" role="tab" data-toggle="tab">Suspended (1)</a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#passed" aria-controls="profile" role="tab" data-toggle="tab">Executed</a>
+                        </li>
+                        <li role="presentation" class="createRequest">
+                            <a href="javascript:void(0)" aria-controls="profile" role="tab" data-toggle="tab">+Create New Engagement Request</a>
+                        </li>
+
+
+                    </ul>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content tab-content-alt">
+                        <!-- requests -->
+                        <div role="tabpanel" class="tab-pane fade in active" id="requests">
+
+                            <div class="requestBlock">
+
+                                <div class="col-sm-6 light-12 ">Requests for Engagements </div>
+                                <div class="col-sm-6 text-right">
+                                    <label class="light-12 whiteText">Sort: </label>
+                                    <div class="btn-group myAssignmentsDropdown">
+                                        <a class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="#">
+                                            <span label>New</span>
+                                            <span class="caret"></span>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a href="#">drop1</a>
+                                                <a href="#">drop2</a>
+                                                <a href="#">drop3</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-12">
+
+                                    <div class="requestBlockHeading">
+                                        <h6 class="col-sm-3 medium-10 whiteText">Date Received</h6>
+                                        <h6 class="col-sm-9 medium-10 whiteText">Request Detail</h6>
+
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div class="requestBlockBody">
+                                        <div class="requestContent">
+
+                                            <div class="requestRightCard col-sm-3 no-padding">
+                                                <div class="requestRightCardInfo active">
+                                                    <a href="#">
+                                                        <span class="extraLight-10 col-sm-12">Tuesday, July 25, 2017 at 6:23 PM</span>
+                                                        <span class="medium-12 col-sm-12">Firstname Lastname</span>
+                                                        <span class="light-12 col-sm-12 whiteText">Account Executive</span>
+                                                    </a>
+                                                </div>
+                                                @foreach (var item in Model)
+                                                {
+                                                    <div class="requestRightCardInfo">
+                                                        <a href="#">
+                                                            <span class="extraLight-10 col-sm-12">@item.DateCreated</span>
+                                                            <span class="medium-12 col-sm-12">@item.Requester</span>
+                                                            <span class="light-12 col-sm-12 whiteText">Account Executive</span>
+                                                        </a>
+                                                    </div>
+                                                }
+
+                                                <div class="requestRightCardInfo">
+                                                    <a href="#">
+                                                        <span class="extraLight-10 col-sm-12">Tuesday, July 25, 2017 at 6:23 PM</span>
+                                                        <span class="medium-12 col-sm-12">Firstname Lastname</span>
+                                                        <span class="light-12 col-sm-12 whiteText">Account Executive</span>
+                                                    </a>
+                                                </div>
+                                                <div class="requestRightCardInfo">
+                                                    <span class="extraLight-10 col-sm-12">Tuesday, July 25, 2017 at 6:23 PM</span>
+                                                    <span class="medium-12 col-sm-12">Firstname Lastname</span>
+                                                    <span class="light-12 col-sm-12 whiteText">Account Executive</span>
+                                                </div>
+                                                <div class="requestRightCardInfo">
+                                                    <span class="extraLight-10 col-sm-12">Tuesday, July 25, 2017 at 6:23 PM</span>
+                                                    <span class="medium-12 col-sm-12">Firstname Lastname</span>
+                                                    <span class="light-12 col-sm-12 whiteText">Account Executive</span>
+                                                </div>
+                                                <div class="requestRightCardInfo">
+                                                    <span class="extraLight-10 col-sm-12">Tuesday, July 25, 2017 at 6:23 PM</span>
+                                                    <span class="medium-12 col-sm-12">Firstname Lastname</span>
+                                                    <span class="light-12 col-sm-12 whiteText">Account Executive</span>
+                                                </div>
+                                            </div>
+
+
+
+
+                                            <div class="col-sm-9 requestleftCard no-padding">
+
+                                                <div class="requestLeftCardInfo">
+                                                    <div class="col-sm-12">
+                                                        <form>
+                                                            <div class="form-group">
+                                                                <label for="client" class="bold-12">Client</label>
+                                                                <div class="light-12 whiteText margin-bottom-30">Content from Briefing Source Goes Here</div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="topic" class="bold-12">Topic(s)</label>
+                                                                <div class="light-12 whiteText margin-bottom-30">Content from Briefing Source Goes Here</div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="client" class="bold-12">
+                                                                    Additional Field(s)
+                                                                    <a href="#" class="editExecutive">
+                                                                        <img class="pull-right" src="img/icon-edit.png" alt="Edit Icon" />
+                                                                    </a>
+                                                                </label>
+                                                                <!--<div class="light-12 whiteText margin-bottom-30">Content from Briefing Source Goes Here</div>-->
+                                                                <textarea class="form-control custom-control light-12" disabled rows="3" style="resize:none">Content from Briefing Source Goes Here</textarea>
+
+                                                                <button type="button" class="btn btn-primary wd100 addAccountExcutive">+ Add Account Executive</button>
+
+                                                            </div>
+
+                                                            <div class="form-group">
+                                                                <label for="client" class="bold-12">
+                                                                    Notes
+                                                                    <a href="#" class="editBtn">
+                                                                        <img class="pull-right" src="img/icon-edit.png" alt="Edit Icon" />
+                                                                    </a>
+                                                                </label>
+                                                                <div class="light-12 whiteText margin-bottom-30 editableContent">Content from Briefing Source Goes Here</div>
+                                                                <textarea class="form-control custom-control light-12 hide" rows="3" style="resize:none"></textarea>
+
+                                                                <div class="text-right hide">
+                                                                    <button class="btn btn-primary cancel" type="button">Cancel</button>
+                                                                    <button class="btn btn-primary buttonLightBlue updateNotes" type="button">Save</button>
+                                                                </div>
+                                                            </div>
+                                                            <button type="submit" class="btn btn-primary pull-right margin-left-15 " id="begainPlaybook"> <a class="whiteText" href="begainplaybook.html">Begin Playbook</a></button>
+                                                            <div class="btn-group myAssignmentsDropdown pull-right">
+                                                                <a class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="#">
+                                                                    <span label><span class="light-12 whiteText">Assign to: </span>My Assignments</span>
+                                                                    <span class="caret"></span>
+                                                                </a>
+                                                                <ul class="dropdown-menu">
+                                                                    <li>
+                                                                        <a href="#">drop1</a>
+                                                                        <a href="#">drop2</a>
+                                                                        <a href="#">drop3</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+
+                                                        </form>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <!-- /.portlet -->
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- preposed -->
+                        <div role="tabpanel" class="tab-pane fade" id="preposed">
+                            <div class="requestBlock">
+
+                                <div class="col-sm-12 light-12 margin-bottom-30 ">Preposed Engagement </div>
+                                <div class="col-sm-12">
+                                    <table class="table table-inverse">
+                                        <thead>
+                                            <tr>
+                                                <th class="">Engagement</th>
+                                                <th class="">Client</th>
+                                                <th class="">Duration</th>
+                                                <th class="">Date(s)</th>
+                                                <th class="">Price</th>
+                                                <th class="">Assigned to</th>
+                                                <th class="">Status</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+
+                                            <tr>
+
+                                                <td>ABC Workshop, LMN Demo </td>
+                                                <td class="light-12">XYZ Company</td>
+                                                <td class="light-12">2 Daysy</td>
+                                                <td class="light-12">
+                                                    8/23/2017- 8/24/2017
+                                                </td>
+                                                <td class="light-12">$X,XXXXXX</td>
+                                                <td class="light-12">
+                                                    Lastname, Firstname
+                                                </td>
+
+                                                <td class="light-12">
+                                                    Published
+                                                </td>
+
+                                            </tr>
+                                            <tr>
+
+                                                <td>ABC Workshop, LMN Demo </td>
+                                                <td class="light-12">XYZ Company</td>
+                                                <td class="light-12">2 Daysy</td>
+                                                <td class="light-12">
+                                                    8/23/2017- 8/24/2017
+                                                </td>
+                                                <td class="light-12">$X,XXXXXX</td>
+                                                <td class="light-12">
+                                                    Lastname, Firstname
+                                                </td>
+
+                                                <td class="light-12">
+                                                    Published
+                                                </td>
+                                            </tr>
+                                            <tr>
+
+                                                <td>ABC Workshop, LMN Demo </td>
+                                                <td class="light-12">XYZ Company</td>
+                                                <td class="light-12">2 Daysy</td>
+                                                <td class="light-12">
+                                                    8/23/2017- 8/24/2017
+                                                </td>
+                                                <td class="light-12">$X,XXXXXX</td>
+                                                <td class="light-12">
+                                                    Lastname, Firstname
+                                                </td>
+
+                                                <td class="light-12">
+                                                    Published
+                                                </td>
+
+                                            </tr>
+                                            <tr>
+
+                                                <td>ABC Workshop, LMN Demo </td>
+                                                <td class="light-12">XYZ Company</td>
+                                                <td class="light-12">2 Daysy</td>
+                                                <td class="light-12">
+                                                    8/23/2017- 8/24/2017
+                                                </td>
+                                                <td class="light-12">$X,XXXXXX</td>
+                                                <td class="light-12">
+                                                    Lastname, Firstname
+                                                </td>
+
+                                                <td class="light-12">
+                                                    Published
+                                                </td>
+
+                                            </tr>
+                                            <tr>
+
+                                                <td>ABC Workshop, LMN Demo </td>
+                                                <td class="light-12">XYZ Company</td>
+                                                <td class="light-12">2 Daysy</td>
+                                                <td class="light-12">
+                                                    8/23/2017- 8/24/2017
+                                                </td>
+                                                <td class="light-12">$X,XXXXXX</td>
+                                                <td class="light-12">
+                                                    Lastname, Firstname
+                                                </td>
+
+                                                <td class="light-12">
+                                                    Published
+                                                </td>
+
+                                            </tr>
+                                            <tr>
+
+                                                <td>ABC Workshop, LMN Demo </td>
+                                                <td class="light-12">XYZ Company</td>
+                                                <td class="light-12">2 Daysy</td>
+                                                <td class="light-12">
+                                                    8/23/2017- 8/24/2017
+                                                </td>
+                                                <td class="light-12">$X,XXXXXX</td>
+                                                <td class="light-12">
+                                                    Lastname, Firstname
+                                                </td>
+
+                                                <td class="light-12">
+                                                    Published
+                                                </td>
+                                            </tr>
+                                            <tr>
+
+                                                <td>ABC Workshop, LMN Demo </td>
+                                                <td class="light-12">XYZ Company</td>
+                                                <td class="light-12">2 Daysy</td>
+                                                <td class="light-12">
+                                                    8/23/2017- 8/24/2017
+                                                </td>
+                                                <td class="light-12">$X,XXXXXX</td>
+                                                <td class="light-12">
+                                                    Lastname, Firstname
+                                                </td>
+
+                                                <td class="light-12">
+                                                    Published
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="col-sm-6 text-right">
+                                    <div class="pagination">
+                                        <a href="#">❮</a>
+                                        <a href="#">1</a>
+                                        <a href="#">2</a>
+                                        <a href="#">❯</a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 text-right">
+
+                                    <div class="btn-group myAssignmentsDropdown">
+                                        <a class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="#">
+                                            <span label="">10 per page</span>
+                                            <span class="caret"></span>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a href="#">20 per page</a>
+                                                <a href="#">30 per page</a>
+                                                <a href="#">40 per page</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            <div role="tabpanel" class="tab-pane fade" id="confirm"></div>
+                            <div role="tabpanel" class="tab-pane fade" id="suspened"></div>
+                            <div role="tabpanel" class="tab-pane fade" id="passed"></div>
+                            <div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+<div class="modal fade" id="createRequest" tabindex="-1" role="dialog" aria-labelledby="smallModal" aria-hidden="true">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><img class="" src="img/icon-close.png" alt="Close Icon"></button>
+                <h4 class="modal-title" id="myModalLabel">Create New Engagement Request</h4>
+            </div>
+            <div class="modal-body">
+                <div class="createRequestFormContainer">
+
+                    <form>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="firstname">Field Label</label>
+                                <input type="email" class="form-control" id="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Field Label</label>
+                                <input type="email" class="form-control" id="email">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="firstname">Field Label</label>
+                                <input type="email" class="form-control" id="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Field Label</label>
+                                <input type="email" class="form-control" id="email">
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <label for="email">Field Label</label>
+                                <textarea class="form-control" id="email"></textarea>
+                            </div>
+                        </div>
+
+
+
+
+
+                    </form>
+
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default buttonLightBlue" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary buttonPrimary">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="addAccountExcutive" tabindex="-1" role="dialog" aria-labelledby="smallModal" aria-hidden="true">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><img class="" src="img/icon-close.png" alt="Close Icon"></button>
+                <h4 class="modal-title" id="myModalLabel">Add Account Executive</h4>
+            </div>
+            <div class="modal-body">
+                <div class="createRequestFormContainer">
+
+                    <form id="addAccountExecutiveForm">
+                        <div class="accountExecutiveEmail">
+                            <div class="col-sm-11">
+
+                                <div class="form-group">
+                                    <label for="firstname">AE Email Address </label>
+                                    <input type="email" class="form-control" id="aeemail">
+                                </div>
+                            </div>
+                            <div class="col-sm-1">
+                                <div class="form-group">
+                                    <label for="firstname">Lead</label>
+                                    <input type="radio" class="form-control" id="aelead" name="aelead">
+                                </div>
+                            </div>
+
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="col-sm-12">
+                            <button type="button" class="btn btn-primary wd100 addNewAccountExcutive">+ Add Account Executive</button>
+
+                        </div>
+
+
+
+
+
+
+                    </form>
+
+                </div>
+            </div>
+            <div class="modal-footer col-sm-12">
+                <button type="button" class="btn btn-default buttonLightBlue" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary buttonPrimary">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="editExecutive" tabindex="-1" role="dialog" aria-labelledby="smallModal" aria-hidden="true">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><img class="" src="img/icon-close.png" alt="Close Icon"></button>
+                <h4 class="modal-title" id="myModalLabel">Edit Account Executive</h4>
+            </div>
+            <div class="modal-body">
+                <div class="createRequestFormContainer">
+
+                    <form>
+                        <div class="col-sm-11 no-padding-horizontal">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="firstname">Field Label</label>
+                                    <input type="email" class="form-control" id="email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Field Label</label>
+                                    <input type="email" class="form-control" id="email">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="firstname">Field Label</label>
+                                    <input type="email" class="form-control" id="email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Field Label</label>
+                                    <input type="email" class="form-control" id="email">
+                                </div>
+                            </div>
+
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="col-sm-1">
+                            <div class="form-group">
+                                <label for="firstname">Lead</label>
+                                <input type="radio" class="form-control" id="email" name="lead">
+                            </div>
+                            <div class="form-group">
+                                <label for="firstname">Lead</label>
+                                <input type="radio" class="form-control" id="email" name="lead">
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+
+                    </form>
+
+                </div>
+            </div>
+            <div class="modal-footer col-sm-12">
+                <button type="button" class="btn btn-default buttonLightBlue" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary buttonPrimary">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>

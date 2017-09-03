@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>DEF-Dashboard</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link href='https://fonts.googleapis.com/css?family=Catamaran' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+    <div class="container-fluid">
+        <div id="wrapper">
+            <div id="menu">
+                <nav class="navbar navbar-default bgnav">
+
+                    <!-- Brand/logo -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#example-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">
+                            <img src="img/brandlogo.png" class="logo" width="35" height="37" alt="Digital Engagement Framework">
+                            <div class="accountInfo">
+                                <h3 class="visible-xs">Digital Engagement Framework</h3>
+                                <h3 class="hidden-xs">Framework</h3>
+                                <h3 class="hidden-xs">Digital Engagement</h3>
+                                <h3></h3>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Collapsible Navbar -->
+                    <div class="collapse navbar-collapse" id="example-1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Manage <br>Engagements</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Packages &
+                                    <br>Activities
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Admin</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            @RenderBody()
+            <footer class="mainfooter" role="contentinfo">
+                <div class="footer-bottom">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 text-center footerInfo">
+                                <!--Footer Bottom-->
+                                <span class="text-xs-center">© 2017 NTT DATA Services - All Rights Reserved</span>
+                                <ul class="footer-links">
+                                    <li class="hidden-xs">
+                                        <a href="javascript:;">Support</a>
+                                    </li>
+                                    <li class="hidden-xs">
+                                        <a href="javascript:;">Site Map</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/mainjs")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

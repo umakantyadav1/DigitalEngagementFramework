@@ -1,0 +1,396 @@
+.myAssignmentsDropdown {
+    .dropdown-toggle {
+        font-size: 12px;
+        font-weight: 500;
+        color: #51deff;
+        border: none;
+        background: transparent;
+        &:hover,
+        &:focus,
+        &:visited {
+            border: none;
+            background: transparent;
+            color: #51deff;
+        }
+    }
+    &.open {
+        .dropdown-toggle {
+            &.btn-default {
+                background-color: transparent;
+                color: $white;
+            }
+        }
+        .dropdown-menu {
+            background-image: linear-gradient(to bottom, #33567e, #203349);
+            box-shadow: 0 0 4px 2px #0099ff;
+            border: solid 1px #0099ff;
+            li {
+                a {
+                    color:$white;
+                    &.active,
+                    &:hover,
+                    &:focus,
+                    &:visited {
+                        color: #51deff;
+                        background-color: #1c2734;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.card {
+    .panel {
+        border: none;
+        .panel-heading {
+            background: #0182b3;
+            overflow: auto;
+            border-color: #0182b3;
+        }
+        a:link {
+            color: #5cfdff
+        }
+        .panel-body {
+            .panelBodyHeader {
+                background: #1c2734;
+                overflow: auto;
+                border-color: #1c2734;
+                border-radius: 0px;
+            }
+            a:link {
+                color: #ffffff
+            }
+            .panelBodyContent {
+                background-color: #1a1e23;
+                overflow: auto;
+                min-height: 1px;
+                max-height: 488px;
+                .infoCard {
+                    padding: 15px;
+                    border-bottom: thin solid #1c2734;
+                    overflow: auto;
+                    min-height: 1px;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+
+.tab {
+    .nav-justified {
+        width: 80%;
+        /* justify-content: center; */
+        /* text-align: center; */
+        margin: auto;
+        li {
+            text-align: center;
+            a {
+                display: inline;
+                padding: 10px 0px;
+                display: inline;
+                border-radius: 0px;
+                &:hover {
+                    background-color: transparent;
+                    color: $white;
+                    font-size: 12px;
+                    font-weight: bold;
+                }
+            }
+            &.active {
+                a {
+                    font-size: 12px;
+                    font-weight: bold;
+                    letter-spacing: 1.1px;
+                    color: $white;
+                    background-color: transparent;
+                    border-bottom: solid 3px #0182b3;
+                }
+            }
+        }
+    }
+    .tab-content {
+        margin-top: 40px;
+        margin: 40px auto 20px auto;
+        .infoCard {
+            border-radius: 3px;
+            background-image: linear-gradient(to bottom, #33567e, #203349);
+            min-height: 380px;
+            overflow: auto;
+            background: #1a2735;
+            padding: 15px;
+            .title {
+                padding: 20px 10px 20px 10px;
+                overflow: auto;
+                img {
+                    vertical-align: text-bottom;
+                    margin-right: 10px;
+                    width: 17.8px;
+                    height: 22.8px;
+                }
+                span {}
+            }
+            .cardDetail {
+                margin-top: 50px;
+                div {
+                    margin-bottom: 5px;
+                }
+                p {
+                    padding-bottom: 20px;
+                }
+            }
+        }
+        a {
+            display: inline-block;
+            padding: 40px 0px 10px 0px;
+        }
+    }
+}
+
+.customTab {
+    .nav-tabs {
+        border-bottom: 1px solid $primary;
+        &.nav-tabs-alt {
+            padding-top: 30px;
+            li {
+                //margin-bottom: -8px;
+                a {
+                    color: $white;
+                    font-size: 11px;
+                    background-color: #203349;
+                    font-weight: 200;
+                    letter-spacing: 1px;
+                    @include border('bottom', $primary);
+                    margin-right: 5px;
+                }
+            }
+            li.active {
+                a {
+                    background-color: $secondary;
+                    color: $white !important;
+                    border: 1px solid $primary;
+                    border-bottom-color: transparent;
+                    &:focus,
+                    &:hover {
+                        cursor: default;
+                        border: 1px solid $primary;
+                        border-bottom-color: transparent;
+                    }
+                }
+            }
+            li.createRequest {
+                float: right;
+                margin-bottom: 0px;
+                a {
+                    background-color: transparent;
+                    color: #51deff;
+                    padding-right: 0px;
+                    margin-right: 0px;
+                    border: none;
+                    &:hover,
+                    &:focus {
+                        border: none;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+    .tab-content.tab-content-alt {
+        border: 1px solid $primary;
+        border-top-color: transparent;
+        background-color: $secondary;
+        border-radius: 0px;
+    }
+}
+
+.requestBlock {
+    padding: 20px 15px;
+    position: relative;
+    overflow: auto;
+    .requestBlockHeading {
+        padding: 5px 15px;
+        background-color: #203349;
+        border-top: 1px solid $primary;
+        margin-top: 20px;
+    }
+    .requestBlockBody {
+        .requestContent {
+            .requestRightCard {
+                .requestRightCardInfo {
+                    background-color: #203349;
+                    border-bottom: 1px solid $primary;
+                    overflow: auto;
+                    position: relative;
+                    padding: 15px;
+                    span {
+                        &:first-child {
+                            margin-bottom: 10px;
+                        }
+                    }
+                    &.active {
+                        background-color: $primary;
+                    }
+                }
+            }
+            .requestleftCard {
+                background-color: $secondary;
+                .requestLeftCardInfo {
+                    overflow: auto;
+                    position: relative;
+                    padding: 20px 15px;
+                    label {
+                        display: block;
+                        margin-bottom: 20px;
+                    }
+                    label+div {
+                        padding-top: 20px;
+                        @include border('top', $primary);
+                    }
+                    textarea {
+                        background-color: transparent;
+                        @include border('all', $primary);
+                        padding: 10px;
+                        color: $white;
+                        @include noborderRadiusBottom();
+                        &:focus {
+                            @include border('all', $primary);
+                        }
+                    }
+                    .btn {
+                        &.wd100 {
+                            border-top: transparent;
+                            @include noborderRadiusTop();
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.table {
+    &.table-inverse {
+        background-color: rgba(47, 50, 64, 0.45);
+        thead {
+            background-color: #203349;
+            @include border("top", $primary);
+            border-bottom: transparent;
+            th {
+                padding: 1.75rem;
+                font-size: 10px;
+                font-weight: 500;
+                letter-spacing: 0.9px;
+                text-align: left;
+                color: #ffffff;
+                @include border("top", rbg(81, 222, 255));
+                border-bottom: none;
+            }
+        }
+        tbody {
+            tr {
+                &:first-child {
+                    td {
+                        border-top: none;
+                    }
+                }
+                td {
+                    padding: 1.75rem;
+                    color: $white;
+                    @include border("top", $primary);
+                    &:first-child {
+                        color: #51deff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.pagination {
+    display: inline-block;
+    margin: 0px;
+}
+
+.pagination a {
+    color: #51deff;
+    float: left;
+    padding: 8px 7px;
+    text-decoration: none;
+    transition: background-color .3s;
+}
+
+
+/* ---------------PlayBook------------------------*/
+
+.payBookContent {
+    position: relative;
+    min-height: 1px;
+    overflow: auto;
+    padding: 15px 15px;
+    ul {
+        li {
+            padding-left: 10px;
+            .fa {
+                vertical-align: text-bottom;
+            }
+        }
+    }
+    .form-horizontal {
+        .control-label {
+            font-size: 12px;
+            font-weight: bold;
+            letter-spacing: 1.1px;
+            text-align: left;
+            color: #51deff;
+        }
+    }
+    .dragable {
+        background-image: linear-gradient(to bottom, #1c2734, #203349);
+        padding: 15px;
+    }
+    button {
+        &.wd100 {
+            @include noborderRadiusBottom();
+            @include noborderRadiusTop();
+        }
+    }
+    .panel {
+        background-color: #203349;
+        color: #ffffff;
+        border-color: transparent;
+    }
+    .photo {
+        width: 100%;
+        max-width: 140px;
+        max-height: 93.5px;
+    }
+}
+
+
+/* For register and signIn page */
+
+.defRegisterFormContainer {
+    form {
+        label {
+            font-size: 12px;
+            font-weight: bold;
+            letter-spacing: 1.1px;
+            text-align: left;
+            color: $white;
+        }
+        input {
+            background-color: transparent;
+            border: 1px solid #51deff;
+        }
+        input+p {
+            margin-top: 15px;
+            color: #a94442;
+        }
+        .buttonLightBlue {
+            display: block;
+            padding: 0px 10px 12px 0px;
+        }
+    }
+}

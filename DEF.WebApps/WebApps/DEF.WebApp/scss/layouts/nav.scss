@@ -1,0 +1,153 @@
+.navbar-toggler {
+    position: absolute;
+    top: 24px;
+    right: 6px;
+}
+
+@media (max-width: 767px) {
+    .navbar-nav>li>a {
+        line-height: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+    background: #1c2734;
+    color: #ffffff;
+}
+
+#menu {
+    .bgnav {
+        background: #1c2734;
+        box-shadow: 0 5px 4px 0 rgba(0, 0, 0, 0.5);
+    }
+    .navbar-default {
+        &.navbar {
+            min-height: 50px;
+            margin-bottom: 0px;
+            border-color: transparent;
+        }
+        .navbar-nav {
+            &.navbar-right {
+                padding: 22px;
+            }
+            .nav-item {
+                position: relative;
+                &.active {
+                    .nav-link {
+                        color: #ffffff;
+                        background: #1c2734;
+                        &:hover,
+                        &:focus {
+                            background: #1c2734;
+                            color: #ffffff;
+                        }
+                    }
+                    &:after {
+                        content: "";
+                        position: absolute;
+                        width: 0;
+                        height: 0;
+                        border-style: solid;
+                        border-width: 0 15px 15px 15px;
+                        border-color: transparent transparent #51deff transparent;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        margin: auto;
+                        top: 78px;
+                    }
+                }
+                .nav-link {
+                    font-weight: 300;
+                    letter-spacing: 1px;
+                    text-align: center;
+                    color: #ffffff;
+                    border-left: solid 1px #0182b3;
+                    padding-right: 3.5rem;
+                    padding-left: 3.5rem;
+                    padding-top: 0px;
+                    padding-bottom: 0px;
+                    height: 50px;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    display: flex;
+                    &:hover {
+                        font-weight: 300;
+                        letter-spacing: 1px;
+                        text-align: center;
+                        color: #ffffff;
+                        border-left: solid 1px #0182b3;
+                        padding-right: 3.5rem;
+                        padding-left: 3.5rem;
+                    }
+                }
+            }
+        }
+        .navbar-header {
+            .navbar-brand {
+                height: 100%;
+                padding: 25px;
+                font-size: 18px;
+                line-height: 100%;
+                position: relative;
+                padding-bottom: 20px;
+                img {
+                    &.logo {
+                        display: inline-block;
+                        padding-top: 0px;
+                        vertical-align: baseline;
+                    }
+                }
+                .accountInfo {
+                    margin-left: 15px;
+                    display: inline-block;
+                    h3 {
+                        font-size: 18px;
+                        color: #ffffff;
+                        font-weight: bold;
+                        margin: 0px;
+                        margin-bottom: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #0099ff;
+}
+
+.navbar-toggle .icon-bar+.icon-bar {
+    margin-top: 6px;
+}
+
+.navbar-toggle .icon-bar {
+    display: block;
+    width: 31px;
+    height: 3px;
+    border-radius: 1px;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+}
+
+.navbar-toggle {
+    position: relative;
+    float: left;
+    margin-right: 9px;
+    padding: 9px 10px;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    padding-right: 0px;
+}

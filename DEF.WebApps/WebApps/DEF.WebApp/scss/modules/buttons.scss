@@ -1,0 +1,61 @@
+.btn {
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1.1px;
+    text-align: center;
+    color: $white;
+    padding: 10px 12px;
+    @include border-radius(3px);
+    &:focus {
+        outline: none;
+    }
+    &.cancel,
+    &.save,
+    &.buttonLightBlue,
+    {
+        border: none;
+        background: none;
+        color: #51deff;
+        &:focus {
+            border: none;
+            background: none;
+            color: #51deff;
+            outline: none;
+        }
+    }
+    &.buttonPrimary {
+        @include border-radius(0);
+    }
+}
+
+.btn-primary {
+    background-color: $primary;
+    @include border("all", $primary)
+}
+
+.btn-secondary {
+    background-color: $secondary;
+    color: $primary;
+}
+
+.btn-default {
+    background-color: rgba(28, 39, 52, 0.45);
+    color: $primary;
+    border-color: $primary;
+    &:hover {
+        background-color: rgba(28, 39, 52, 0.25);
+        color: $primary;
+        border-color: $primary;
+    }
+}
+
+.editButton {
+    padding: 0px;
+    &:before {
+        content: "";
+        position: absolute;
+        border-left: 2px solid #0099ff;
+        height: 19px;
+        margin-left: -10px
+    }
+}

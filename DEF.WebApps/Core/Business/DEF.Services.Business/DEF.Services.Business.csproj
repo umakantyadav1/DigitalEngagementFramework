@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5CE66814-3A31-40F5-B711-2EEDB906E9CD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DEF.Services.Business</RootNamespace>
+    <AssemblyName>DEF.Services.Business</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\..\..\..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\..\..\..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation">
+      <HintPath>..\..\..\..\packages\CommonServiceLocator.1.3\lib\portable-net4+sl5+netcore45+wpa81+wp8\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity, Version=4.0.0.0, Culture=neutral, PublicKeyToken=6d32ff45e0ccc69f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\packages\Unity.4.0.1\lib\net45\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Configuration">
+      <HintPath>..\..\..\..\packages\Unity.4.0.1\lib\net45\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.RegistrationByConvention">
+      <HintPath>..\..\..\..\packages\Unity.4.0.1\lib\net45\Microsoft.Practices.Unity.RegistrationByConvention.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Interfaces\BriefingSource\IBriefingSourceRequestBusiness.cs" />
+    <Compile Include="Modules\Base\BusinessBase.cs" />
+    <Compile Include="Modules\BriefingSource\BriefingSourceRequestBusiness.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\DEF.Services\ViewModels\DEF.Services.ViewModels\DEF.Services.ViewModels.csproj">
+      <Project>{980fa0fa-c48f-483f-96f9-8a4abe171a4c}</Project>
+      <Name>DEF.Services.ViewModels</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Infrastructure\CrossCutting\DEF.Service.Logging\DEF.Services.Logging.csproj">
+      <Project>{1490a643-f0e1-4bbe-8d1d-78cf1c2a4d78}</Project>
+      <Name>DEF.Services.Logging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Infrastructure\Repository\DEF.Service.Data\DEF.Services.Data.csproj">
+      <Project>{57792b6b-350b-41d8-bca5-c28937251fea}</Project>
+      <Name>DEF.Services.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Infrastructure\Repository\DEF.Services.Common.Repository\DEF.Services.Common.Repository.csproj">
+      <Project>{8fd119a5-85b7-4de8-ab69-241a191eec5f}</Project>
+      <Name>DEF.Services.Common.Repository</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Infrastructure\Repository\DEF.Services.Repository\DEF.Services.Repository.csproj">
+      <Project>{bf6d5d3e-536b-4e87-b9e2-623a1a7fdfb6}</Project>
+      <Name>DEF.Services.Repository</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Infrastructure\Utilities\DEF.Services.Utilities\DEF.Services.Utilities.csproj">
+      <Project>{a208c161-4869-405e-a398-c653a7c6f129}</Project>
+      <Name>DEF.Services.Utilities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DEF.Services.Common.Business\DEF.Services.Common.Business.csproj">
+      <Project>{fcbc96a3-4d16-4859-a9d8-710720112ce9}</Project>
+      <Name>DEF.Services.Common.Business</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

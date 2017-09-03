@@ -1,0 +1,316 @@
+﻿@{
+    ViewBag.Title = "Dashboard";
+}
+<section id="dashboard-top">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 intro text-left">Dashboard</div>
+            <div class="col-sm-6 text-right">
+                <div class="btn-group myAssignmentsDropdown">
+                    <a class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="#">
+                        <span label>My Assignments</span>
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="#">drop1</a>
+                            <a href="#">drop2</a>
+                            <a href="#">drop3</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="col-md-12">
+                <div class="divider"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3 col-xs-6">
+                <span>New Requests</span>
+                <h1 class="display-4">2</h1>
+                <div>@Html.ActionLink("View New Requests", "Index", "Engagement", null,new { @class = "light-11" })</div>
+                <div><a class="light-11" href="request.html">View Historical Requests</a></div>
+            </div>
+            <div class="col-sm-3 col-xs-6">
+                <span>Proposed Engagements</span>
+                <h1 class="display-4">4</h1>
+                <div>Drafts (2)</div>
+                <div>Published (2)</div>
+            </div>
+            <div class="col-sm-3 col-xs-6">
+                <span>Confirmed Engagement</span>
+                <h1 class="display-4">6</h1>
+                <div>View/Edit</div>
+
+            </div>
+
+            <div class="col-sm-3 col-xs-6">
+                <div>Engagement Follow-Up</div>
+                <h1 class="display-4">2</h1>
+                <div>View & Follow-Up</div>
+                <div>View Past Engagement</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="row margin-top-30">
+                <div class="col-sm-6 col-xs-12 ">
+                    <div class="panel">
+                        <div class="panel-heading">
+                            <div class="col-xs-6 text-left bold-12">Upcoming Engagements</div>
+                            <a href="javascript:void(0)" class=" col-xs-6 text-right medium-10">+ Create New</a>
+                        </div>
+
+                        <div class="panel-body no-padding">
+                            <div class="panel-heading panelBodyHeader">
+                                <a href="javascript:void(0)" class=" col-xs-6 text-left medium-10">Engagement</a>
+                                <a href="javascript:void(0)" class=" col-xs-6 text-right medium-10">Playbook Published</a>
+                            </div>
+                            <div class="panelBodyContent">
+                                <div class="infoCard">
+                                    <p class="col-xs-12 extraLight-10">August 23-24, 2017</p>
+                                    <div class="col-xs-10 medium-12">ABC Workshop, LMN Demo</div>
+                                    <div class="col-xs-2 text-right">
+                                        <img src="img/icon-check-solid-grn/icon-check-solid-grn-16-x-16.png">
+                                    </div>
+
+                                    <div clas="clerfix"></div>
+                                    <div class="col-xs-12 light-12 whiteText">Client: XYZ Company</div>
+
+                                </div>
+                                <div class="infoCard">
+                                    <p class="col-xs-12 extraLight-10">August 23-24, 2017</p>
+                                    <div class="col-xs-10 medium-12">ABC Workshop, LMN Demo</div>
+                                    <div class="col-xs-2 text-right">
+                                        <img src="img/icon-check-solid-grn/icon-check-solid-grn-16-x-16.png">
+                                    </div>
+
+                                    <div clas="clerfix"></div>
+                                    <div class="col-xs-12 light-12 whiteText">Client: XYZ Company</div>
+
+                                </div>
+                                <div class="infoCard">
+                                    <p class="col-xs-12 extraLight-10">August 23-24, 2017</p>
+                                    <div class="col-xs-10 medium-12">ABC Workshop, LMN Demo</div>
+                                    <div class="col-xs-2 text-right">
+                                        <img src="img/icon-check-solid-grn/icon-check-solid-grn-16-x-16.png">
+                                    </div>
+
+                                    <div clas="clerfix"></div>
+                                    <div class="col-xs-12 light-12 whiteText">Client: XYZ Company</div>
+
+                                </div>
+                                <div class="infoCard">
+                                    <p class="col-xs-12 extraLight-10">August 23-24, 2017</p>
+                                    <div class="col-xs-10 medium-12">ABC Workshop, LMN Demo</div>
+                                    <div class="col-xs-2 text-right">
+                                        <img src="img/icon-check-solid-grn/icon-check-solid-grn-16-x-16.png">
+                                    </div>
+
+                                    <div clas="clerfix"></div>
+                                    <div class="col-xs-12 light-12 whiteText">Client: XYZ Company</div>
+
+                                </div>
+                                <div class="infoCard">
+                                    <p class="col-xs-12 extraLight-10">August 23-24, 2017</p>
+                                    <div class="col-xs-10 medium-12">ABC Workshop, LMN Demo</div>
+                                    <div class="col-xs-2 text-right">
+                                        <img src="img/icon-check-solid-grn/icon-check-solid-grn-16-x-16.png">
+                                    </div>
+
+                                    <div clas="clerfix"></div>
+                                    <div class="col-xs-12 light-12 whiteText">Client: XYZ Company</div>
+
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="col-sm-6 col-xs-12 ">
+                    <div class="panel">
+                        <div class="panel-heading">
+                            <div class="col-xs-6 text-left bold-12">Upcoming Engagements</div>
+                            <a href="javascript:void(0)" class=" col-xs-6 text-right medium-10">+ Create New</a>
+                        </div>
+
+                        <div class="panel-body no-padding">
+                            <div class="panel-heading panelBodyHeader">
+                                <a href="javascript:void(0)" class=" col-xs-6 text-left medium-10">Engagement</a>
+                                <a href="javascript:void(0)" class=" col-xs-6 text-right medium-10">Playbook Published</a>
+                            </div>
+                            <div class="panelBodyContent">
+                                <div class="infoCard">
+                                    <p class="col-xs-12 extraLight-10">August 23-24, 2017</p>
+                                    <div class="col-xs-10 medium-12">ABC Workshop, LMN Demo</div>
+                                    <div class="col-xs-2 text-right">
+                                        <img src="img/icon-check-solid-grn/icon-check-solid-grn-16-x-16.png">
+                                    </div>
+
+                                    <div clas="clerfix"></div>
+                                    <div class="col-xs-12 light-12 whiteText">Client: XYZ Company</div>
+
+                                </div>
+                                <div class="infoCard">
+                                    <p class="col-xs-12 extraLight-10">August 23-24, 2017</p>
+                                    <div class="col-xs-10 medium-12">ABC Workshop, LMN Demo</div>
+                                    <div class="col-xs-2 text-right">
+                                        <img src="img/icon-check-solid-grn/icon-check-solid-grn-16-x-16.png">
+                                    </div>
+
+                                    <div clas="clerfix"></div>
+                                    <div class="col-xs-12 light-12 whiteText">Client: XYZ Company</div>
+
+                                </div>
+                                <div class="infoCard">
+                                    <p class="col-xs-12 extraLight-10">August 23-24, 2017</p>
+                                    <div class="col-xs-10 medium-12">ABC Workshop, LMN Demo</div>
+                                    <div class="col-xs-2 text-right">
+                                        <img src="img/icon-check-solid-grn/icon-check-solid-grn-16-x-16.png">
+                                    </div>
+
+                                    <div clas="clerfix"></div>
+                                    <div class="col-xs-12 light-12 whiteText">Client: XYZ Company</div>
+
+                                </div>
+                                <div class="infoCard">
+                                    <p class="col-xs-12 extraLight-10">August 23-24, 2017</p>
+                                    <div class="col-xs-10 medium-12">ABC Workshop, LMN Demo</div>
+                                    <div class="col-xs-2 text-right">
+                                        <img src="img/icon-check-solid-grn/icon-check-solid-grn-16-x-16.png">
+                                    </div>
+
+                                    <div clas="clerfix"></div>
+                                    <div class="col-xs-12 light-12 whiteText">Client: XYZ Company</div>
+
+                                </div>
+                                <div class="infoCard">
+                                    <p class="col-xs-12 extraLight-10">August 23-24, 2017</p>
+                                    <div class="col-xs-10 medium-12">ABC Workshop, LMN Demo</div>
+                                    <div class="col-xs-2 text-right">
+                                        <img src="img/icon-check-solid-grn/icon-check-solid-grn-16-x-16.png">
+                                    </div>
+
+                                    <div clas="clerfix"></div>
+                                    <div class="col-xs-12 light-12 whiteText">Client: XYZ Company</div>
+
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+<section id="dashboard-middle">
+    <div class="container">
+        <div class="row">
+            <div class="intro text-center">Featured Packages & Activities</div>
+
+            <div class="tab margin-top-30">
+
+                <ul class="nav nav-pills nav-justified">
+                    <li class="active">
+                        <a href="#tab_a" class="light-12 " data-toggle="pill">Newly Added</a>
+                    </li>
+                    <li>
+                        <a href="#tab_b" class="light-12 " data-toggle="pill">Best Rated</a>
+                    </li>
+                    <li>
+                        <a href="#tab_c" class="light-12 " data-toggle="pill">Most Requested</a>
+                    </li>
+                    <li>
+                        <a href="#tab_d" class="light-12 " data-toggle="pill">Yielded Follow-Up Business</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+
+                    <div class="tab-pane active" id="tab_a">
+
+                        <div class="col-sm-4 col-xs-12">
+                            <div class="infoCard">
+                                <div class="title col-lg-12 d-flex">
+                                    <img src="img/icon-doc.png" alt="icon-doc@2x" />
+                                    <span class=" bold-12 whiteText">Name of Activity.</span>
+
+                                </div>
+                                <div class="col-lg-12 cardDetail">
+                                    <div class="bold-12 lightBlue ">Topics:</div>
+                                    <p class=" light-12 whiteText">Lorem, Ipsum, Dolor, Sit Amet Consecteteur</p>
+                                    <div class="bold-12 lightBlue ">Duration:</div>
+                                    <p class=" light-12 whiteText">1 hour</p>
+                                    <div class="bold-12 whiteText ">Linked Activities:</div>
+                                    <p class=" light-12 lightBlue">Activity 1, Activity 2, Activity 3</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-sm-4 col-xs-12">
+                            <div class="infoCard">
+                                <div class="title col-lg-12 d-flex">
+                                    <img src="img/icon-doc.png" alt="icon-doc@2x" />
+                                    <span class=" bold-12 whiteText">Name of Activity</span>
+
+                                </div>
+                                <div class="col-lg-12 cardDetail">
+                                    <div class="bold-12 lightBlue ">Topics:</div>
+                                    <p class=" light-12 whiteText">Lorem, Ipsum, Dolor, Sit Amet Consecteteur</p>
+                                    <div class="bold-12 lightBlue ">Duration:</div>
+                                    <p class=" light-12 whiteText">1 hour</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-xs-12">
+                            <div class="infoCard">
+                                <div class="title col-lg-12 d-flex">
+                                    <img src="img/icon-doc.png" alt="icon-doc@2x" />
+                                    <span class=" bold-12 whiteText">Name of Activity</span>
+
+                                </div>
+                                <div class="col-lg-12 cardDetail">
+                                    <div class="bold-12 lightBlue ">Topics:</div>
+                                    <p class=" light-12 whiteText">Lorem, Ipsum, Dolor, Sit Amet Consecteteur</p>
+                                    <div class="bold-12 lightBlue ">Duration:</div>
+                                    <p class=" light-12 whiteText">1 hour</p>
+                                    <div class="bold-12 whiteText ">Linked Activities:</div>
+                                    <p class=" light-12 lightBlue">Activity 1, Activity 2, Activity 3</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 text-center ">
+                            <a href="javascript:void(0)" class="light-12 lightBlue">View Package & Activity Inventory</a>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="tab_b">
+                        <h4>Pane B</h4>
+                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                    </div>
+                    <div class="tab-pane" id="tab_c">
+                        <h4>Pane C</h4>
+                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                    </div>
+                    <div class="tab-pane" id="tab_d">
+                        <h4>Pane D</h4>
+                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                    </div>
+                </div>
+                <!-- tab content -->
+
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,44 @@
+.modal {
+    .modal-header {
+        border-bottom: solid 2px #0182b3;
+        padding-left: 0px;
+        padding-right: 0px;
+        .modal-title {
+            font-size: 18px;
+            font-weight: 300;
+            letter-spacing: 1.6px;
+            text-align: left;
+            color: #ffffff;
+        }
+        .close {
+            opacity: 1;
+        }
+    }
+    .modal-content {
+        background-image: linear-gradient(to bottom, #33567e, #203349);
+        box-shadow: 0 0 4px 2px #0099ff;
+        border: solid 1px #0099ff;
+        width: 698.9px;
+        padding: 0px 20px 20px 20px;
+        overflow: auto;
+        min-height: 1px;
+        .modal-footer {
+            border-top: transparent;
+        }
+        label {
+            font-size: 12px;
+            font-weight: bold;
+            letter-spacing: 1.1px;
+            text-align: left;
+            color: $white;
+        }
+        input,
+        textarea {
+            background-color: transparent;
+            border: 1px solid #51deff;
+        }
+        .modal-body {
+            padding: 15px 0px 15px 0px;
+        }
+    }
+}

@@ -1,0 +1,90 @@
+@mixin display-flex() {
+    display: -webkit-box!important;
+    display: -webkit-flex!important;
+    display: -ms-flexbox!important;
+    display: flex!important;
+}
+@mixin justify-content-between() {
+    -webkit-box-pack: justify!important;
+    -webkit-justify-content: space-between!important;
+    -ms-flex-pack: justify!important;
+    justify-content: space-between!important;
+}
+@mixin align-items-center() {
+    -webkit-box-align: center!important;
+    -webkit-align-items: center!important;
+    -ms-flex-align: center!important;
+    align-items: center!important;
+}
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+@mixin border($border, $color) {
+    @if $border=="top" {
+        border-top: 1px solid $color;
+    }
+    @if $border=="bottom" {
+        border-bottom: 1px solid $color;
+    }
+    @if $border=="left" {
+        border-left: 1px solid $color;
+    }
+    @if $border=="right" {
+        border-right: 1px solid $color;
+    }
+    @if $border=="all" {
+        border: 1px solid $color;
+    }
+}
+@mixin padding($padding, $number) {
+    @if $padding =="top" {
+        padding-top: $number ;
+    }
+    @if $padding =="bottom" {
+        padding-bottom: $number ;
+    }
+    @if $padding =="left" {
+        padding-left: $number ;
+    }
+    @if $padding =="right" {
+        padding-right: $number ;
+    }
+    @if $padding =="all" {
+        padding: $number ;
+    }
+    @if $padding =="hori" {
+        padding-left: $number ;
+        padding-right: $number ;
+    }
+    @if $padding =="veri" {
+        padding-top: $number ;
+        padding-bottom: $number ;
+    }
+}
+@mixin noborderRadiusBottom() {
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+@mixin noborderRadiusTop() {
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+}
+@mixin absolutecenter($axis:"both") {
+    position: absolute;
+    @if $axis=="y" {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    @if $axis=="x" {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    @if $axis=="both" {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+}

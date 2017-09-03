@@ -1,0 +1,35 @@
+/*
+  DEF bootstrap Sass theme
+  Version : 
+ */
+
+
+/* BOOTSTRAP - bootstrap sass file */
+
+@import '../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
+@import '../node_modules/font-awesome/scss/font-awesome';
+
+/* BASE - Base styles, variables, mixins etc */
+
+@import 'base/variables';
+@import 'base/mixins';
+@import 'base/base';
+@import 'base/general';
+
+/*MODULES - individual components */
+
+@import 'modules/components';
+@import 'modules/sections';
+@import 'modules/buttons';
+@import 'modules/blocks';
+@import 'modules/modal';
+@import 'modules/typography';
+
+/* LAYOUTS - page layouts styles */
+
+
+/*@import 'layouts/header.scss';*/
+
+@import 'layouts/nav';
+@import 'layouts/footer';
+@import 'layouts/responsive';

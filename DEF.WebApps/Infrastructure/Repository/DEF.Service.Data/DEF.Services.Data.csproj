@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{57792B6B-350B-41D8-BCA5-C28937251FEA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DEF.Services.Data</RootNamespace>
+    <AssemblyName>DEF.Services.Data</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\..\..\..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\..\..\..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccountExecutive.cs">
+      <DependentUpon>EquusEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ActionItem.cs">
+      <DependentUpon>EquusEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Activity.cs">
+      <DependentUpon>EquusEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ActivityAsset.cs">
+      <DependentUpon>EquusEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ActivityBenefit.cs">
+      <DependentUpon>EquusEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ActivityDependency.cs">
+      <DependentUpon>EquusEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ActivityIndustry.cs">
+      <DependentUpon>EquusEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ActivityInternalResource.cs">
+      <DependentUpon>EquusEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ActivityNextStep.cs">
+      <DependentUpon>EquusEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ActivityTip.cs">
+      <DependentUpon>EquusEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ActivityVisitorResource.cs">
+      <DependentUpon>EquusEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Asset.cs">
+      <DependentUpon>EquusEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BriefingRequest.cs">
+      <DependentUpon>EquusEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Engagement.cs">
+      <DependentUpon>EquusEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EngagementOutput.cs">
+      <DependentUpon>EquusEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EquusEntities.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EquusEntities.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EquusEntities.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EquusEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EquusEntities.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EquusEntities.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Industry.cs">
+      <DependentUpon>EquusEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Package.cs">
+      <DependentUpon>EquusEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PackageActivity.cs">
+      <DependentUpon>EquusEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PackageAsset.cs">
+      <DependentUpon>EquusEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PackageBenefit.cs">
+      <DependentUpon>EquusEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PackageIndustry.cs">
+      <DependentUpon>EquusEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PackageInput.cs">
+      <DependentUpon>EquusEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PackageInternalResource.cs">
+      <DependentUpon>EquusEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PackageNextStep.cs">
+      <DependentUpon>EquusEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PackageOutput.cs">
+      <DependentUpon>EquusEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PackagePrerequisite.cs">
+      <DependentUpon>EquusEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PackageSurveyQuestion.cs">
+      <DependentUpon>EquusEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PackageTip.cs">
+      <DependentUpon>EquusEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PackageTopic.cs">
+      <DependentUpon>EquusEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PackageVisitorResource.cs">
+      <DependentUpon>EquusEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Participant.cs">
+      <DependentUpon>EquusEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Playbook.cs">
+      <DependentUpon>EquusEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PlaybookAsset.cs">
+      <DependentUpon>EquusEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PlaybookPackage.cs">
+      <DependentUpon>EquusEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PlaybookSurvey.cs">
+      <DependentUpon>EquusEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PlaybookSurveyAnswer.cs">
+      <DependentUpon>EquusEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PlaybookSurveyTopic.cs">
+      <DependentUpon>EquusEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SurveyAnswerOption.cs">
+      <DependentUpon>EquusEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SurveyQuestion.cs">
+      <DependentUpon>EquusEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Topic.cs">
+      <DependentUpon>EquusEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="User.cs">
+      <DependentUpon>EquusEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Visit.cs">
+      <DependentUpon>EquusEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Visitor.cs">
+      <DependentUpon>EquusEntities.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <Compile Include="EquusEntities.extend.cs" />
+    <EntityDeploy Include="EquusEntities.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>EquusEntities.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="EquusEntities.edmx.diagram">
+      <DependentUpon>EquusEntities.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Core\DataEntities\DEF.Data.Entities\DEF.Data.Entities.csproj">
+      <Project>{ab4e86f0-5203-4c4e-9081-41452fbac92b}</Project>
+      <Name>DEF.Data.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="EquusEntities.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>EquusEntities.edmx</DependentUpon>
+      <LastGenOutput>EquusEntities.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="EquusEntities.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>EquusEntities.edmx</DependentUpon>
+      <LastGenOutput>EquusEntities.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
